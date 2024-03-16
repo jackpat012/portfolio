@@ -304,7 +304,7 @@ submitButton.onclick = function() {
     if (error.length > 0) {
         generatorOutput.innerHTML = `${error}`;
     } else if (error.length === 0) {
-        generatorOutput.innerHTML = `${error}${signOutput}<br>${disposition}<br>${job}<br>${relationship}`;
+        generatorOutput.innerHTML = `${error}${signOutput}<br><br>${disposition}<br>${job}<br>${relationship}`;
     }
 
     generatorOutput.style.display = 'block';
@@ -314,4 +314,6 @@ submitButton.onclick = function() {
     generatorOutput.style.padding = '0.7rem';
     generatorOutput.style.margin = '1rem';
     generatorOutput.style.color = '#B3A622';
+    generatorOutput.style.textShadow = '0.1rem 0.1rem black';
+    generatorOutput.style.boxShadow = '0 0 0.5rem black, 0 0 0.7rem black inset';
 } 
