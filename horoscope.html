@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jackson's Portfolio | Horoscope Generator</title>
+        <link href="./horoscopeStyles.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="./images/favicon.jpg" type="image/x-icon" />
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Jackson Patenaude</h1>
+            <nav>
+                <ul>
+                    <a href='./index.html'><li>Home</li></a>
+                    <a href='./horoscope.html'><li>Horoscope Generator</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="generatorBox">
+            <div class="day">
+                <label for="day">Please enter the day you were born on.</label>
+                <input id="day" name="day" type="number" min="1" max="31" placeholder="1-31" step="1" />
+            </div>
+            <br>
+            <div class="month">
+                <label for="month">Please enter the month you were born in.</label>
+                <input id="month" name="month" type="number" min="1" max="12" placeholder="1-12" step="1" />
+            </div>
+            <br>
+            <div class="button" id="button">
+                <input type="button" value="Submit">
+            </div>
+            <div id="generatorOutput">
+
+            </div>
+
+
+            <script src="./horoscope.js"></script>
+        </section>
+
+
+
+
+    </body>
+</html>
