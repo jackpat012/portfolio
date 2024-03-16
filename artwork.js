@@ -34,11 +34,11 @@ const randMatrix = (array) => {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === 1) {
             let box = document.getElementById(`box-${i}`);
-            box.style.gridColumn = `${i % 8 + 1} / span 1` ;
+            box.style.gridColumn = `${(i % 8) + 1} / span 1` ;
             box.style.gridRow = `${Math.floor(i / 8) + 1} / span 1` ;
             box.style.width = '100%' ;
             box.style.height = '100%' ;
-            box.style.border = '0.2rem solid black';
+            box.style.border = '0.13rem solid black';
             box.style.backgroundColor = `${getRandomColor()}` ;
             box.style.borderRadius = '3rem' ;
             box.style.boxShadow = '0 0 1rem black , 0 0 0.3rem #c6c027'
@@ -48,7 +48,7 @@ const randMatrix = (array) => {
 
 randMatrix(artMatrix);
 
-artButton.onclick() = function() {
+artButton.onclick = function() {
     artMatrix = [
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 
@@ -59,6 +59,8 @@ artButton.onclick() = function() {
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0
     ];
+
+    artwork.innerHTML = '';
 
     randMatrix(artMatrix);
 }
