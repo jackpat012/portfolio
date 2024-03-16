@@ -1,11 +1,7 @@
-/* Fonts Used: Kode Mono, Manrope
-   Colours used: #323BF0 (deep blue), #5156B0 (light lavender), #505170 (deep lavender), #9B8D54 (light gold), #F0CA32 (deep gold), #46443D (grey), #36352f (dark grey)
+/* Primary colors used in project: #282820 (dark grey), #cdc027 (yellow), 
 */
-
-
-
 @font-face {
-    font-family: 'Kode Mono';
+    font-family:'Kode Mono' ;
     src: url('./fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf');
 }
 
@@ -15,99 +11,104 @@
 }
 
 * {
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
 }
 
+body {
+    background-color: #282820;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 2fr 1fr;
+    height: 100vh;
+}
+
 header {
-    height: 6.5rem;
-    width: 100%;
-    position: fixed;
-    border-bottom: 0.2rem solid black;
-    background-color: #ffffff;
-    opacity: 1.0;
-    background-color: #46443D;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .headerTitle {
-    margin-left: 0.8rem;
-}
-
-header nav {
-    align-self: flex-end;
-    margin: 0.8rem 1rem;
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Kode Mono';
+    line-height: 3rem;
 }
 
 header h1 {
-    font-family: 'Kode Mono';
-    font-size: 2.2rem;
-    color: #f0ca32;
-    text-decoration: underline;
+    font-size: 3.5rem;
     font-weight: bold;
-    text-shadow: 0 0 0.5rem black, 0 0 0.2rem #36352f;
+    color: #cdc027;
+    -webkit-text-stroke: 0.15rem #141410;
 }
 
-header a {
-    font-family: 'Kode Mono';
-    font-size: 1.1rem;
-    color: #9B8D54;
-    background-color: #36352f;
-    padding: 0.15rem 0.25rem;
-    border: 0.1rem solid black;
-    border-radius: 0.3rem;
-    transition: all 0.4s ease-out;
-    box-shadow: 0 0 0.7rem black, 0 0 0 0.2rem #36352f;
-}
-
-header a:hover {
+header aside {
     font-size: 1.3rem;
-    color: #F0CA32;
-    margin-right:1.2rem;
+    color:#b3a622;
+    text-decoration: underline;
 }
 
-
-main {
-    padding-top: 7.5rem;
-    display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-auto-rows: 5rem;
-    background-color: #323BF0;
-    height: 100%;
-}
-
-.banner {
-    display: grid;
-    grid-column: 2/ span 2;
-    grid-row: 1 / span 4;
-    background-color: #505170;
-    border-radius: 0.7rem;
-    grid-template-columns: 1fr 1fr;
-    border: 0.20rem solid #36352f;
-}
-
-.banner div {
-    display: grid;
-    grid-column: 2 / span 1;
-    align-self: center;
+header input {
+    position: relative;
+    top: 4rem;
+    font-size: 0.8rem;
     font-family: 'Manrope';
-    font-size: 1rem;
-    padding: 0 4rem;
-    color: white;
-    line-height: 2rem;
-    background-color:#36352f45;
-    border-radius: 1.5rem;
-    max-height: 300px;
+    background-color: #141410;
+    width: 50%;
+    color:#b3a622;
+    justify-self: center;
+    cursor: pointer;
 }
 
-.skills {
+#artwork {
     display: grid;
-    grid-column: 2/ span 2;
-    grid-row: 5 / span 3;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
+
+.projects {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects a {
+    font-family: 'Manrope';
+    background-color: #57564e;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #b3a622;
+    border: 0.1rem solid #b3a622;
+    box-shadow: 0 0 1.5rem black, 0 0 0.3rem black inset;
+}
+
+.projects p {
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+.contact {
+    display: flex;
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a{
+    display: inline;
+    margin: 0rem 2rem;
+    padding: 1rem;
+}
+

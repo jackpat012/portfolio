@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./styles.css" type="text/css">
         <title>Jackson's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="icon" href="./images/favicon.jpg" type="image/x-icon" />
         <script defer src="./actions.js"></script>
     </head>
+    
     <body>
     
         <header>
-            <div class="headerTitle">
-                <h1>Jackson's Portfolio:</h1>
-            </div>
-            <nav>
-                <a href="./horoscope.html">Horoscope Generator</a>
-            </nav>
-    
-        </header>    
-        
-        <main>            
-            <section class="banner">
-                <div>
-                    <i>Nice to meet you! I'm Jackson, a passionate developer on a mission to transform ideas into digital experiences. My expertise lies in crafting robust, scalable solutions that blend functionality with user-centric design.</i>
-                </div>
-            </section>
+            <h1>Jackson Patenaude</h1>
+            <aside>./Software developer for hire/.</aside>
+            <input class="artButton" id="artButton" type="button" value="*click here for a new piece of art!" />
+        </header>
 
+        <div id="artwork">
+            <script src="./artwork.js"></script>
+        </div>
 
-            <section class="skills">
-                <h2>Skills:</h2>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git Project Deployment</li>
-                    <li>React</li>
-                    <li>PostgreSQL</li>
-                </ul>
-            </section>
-        </main>
+        <nav class="projects">
+            <a href="#horoscopes" id="horoscopes">
+                <image src="./images/sagittarius.png" height="80px"></image>
+                <p>Horoscope Generator</p>
+            </a>
+        </nav>
+
+        <nav class="contact">
+            <a href="https://github.com/jackpat012" id="github">
+               <image src="./images/github.png" height="60px"></image> 
+            </a>
+            <a href="www.linkedin.com/in/jackson-patenaude-3419542ba" id="linkedin">
+                <image src="./images/linkedin.png" height="40px"></image>
+            </a>
+        </nav>
+
     </body>
 </html>
