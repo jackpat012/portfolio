@@ -67,11 +67,10 @@ header input {
 }
 
 header input:hover {
-    padding: 0.2rem;
     box-shadow: 0 0 2rem black, 0 0 0.2rem black inset;
-    font-size: 0.9rem;
-    width: auto;
+    transform: scale(1.1);
 }
+
 
 
 #artwork {
@@ -105,8 +104,9 @@ header input:hover {
 }
 
 .projects a:hover {
-    padding: 0.9rem;
+    transform: scale(1.05);
     box-shadow: 0 0 2rem black, 0 0 0.7rem black inset;
+    text-shadow: 0 0 0.5rem black;
 }
 
 .projects p {
