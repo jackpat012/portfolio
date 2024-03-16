@@ -63,7 +63,16 @@ header input {
     justify-self: center;
     cursor: pointer;
     border-radius: 0.3rem;
+    transition: all 0.3s ease-out;
 }
+
+header input:hover {
+    padding: 0.2rem;
+    box-shadow: 0 0 2rem black, 0 0 0.2rem black inset;
+    font-size: 0.9rem;
+    width: auto;
+}
+
 
 #artwork {
     display: grid;
@@ -92,6 +101,12 @@ header input {
     color: #b3a622;
     border: 0.1rem solid #b3a622;
     box-shadow: 0 0 1.5rem black, 0 0 0.3rem black inset;
+    transition: all 0.3s ease-out;
+}
+
+.projects a:hover {
+    padding: 0.9rem;
+    box-shadow: 0 0 2rem black, 0 0 0.7rem black inset;
 }
 
 .projects p {
