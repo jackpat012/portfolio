@@ -80,20 +80,23 @@ header ul li:hover {
 }
 
 .generatorBox input {
-    background-color: #666458;
-    color: #b3a622;
-    font-family: 'Kode Mono'
+    background-color: #b3af99;
+    color: #363302;
+    font-family: 'Kode Mono';
+    font-size: 0.9rem;
 }
 
 .generatorBox input::placeholder {
-    color: #493942
+    color: #967487
 }
 
 #generatorOutput {
     display: hidden;
 }
 
-
+#button input {
+    padding: 0.3rem;
+}
 
 
 
