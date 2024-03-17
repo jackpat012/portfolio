@@ -308,7 +308,7 @@ submitButton.onclick = function() {
     }
 
     generatorOutput.style.display = 'block';
-    generatorOutput.style.backgroundColor = '#666458';
+    generatorOutput.style.backgroundColor = '#232323';
     generatorOutput.style.borderRadius = '0.9rem';
     generatorOutput.style.border = '0.2rem solid black';
     generatorOutput.style.padding = '0.7rem';
